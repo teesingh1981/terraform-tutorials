@@ -7,7 +7,7 @@ provider "azurerm" {
 ## <https://www.terraform.io/docs/providers/azurerm/r/resource_group.html>
 resource "azurerm_resource_group" "rg" {
   name     = "TerraformTesting"
-  location = "eastus"
+  location = "uksouth"
 }
 
 ## <https://www.terraform.io/docs/providers/azurerm/r/availability_set.html>
