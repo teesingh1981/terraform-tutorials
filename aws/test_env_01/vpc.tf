@@ -77,3 +77,13 @@ resource "aws_instance" "my_instance" {
     Name = "testnstance"
   }
 }
+
+# OUTPUT IP ADDRESS 
+output "instance_public_ip" {
+  value = "${aws_instance.my_instance.public_ip}"
+}
+
+# SSH CMD
+output "ec2_command" {
+  value = "ssh -i prom.pem ubuntu@ec2-52-56-195-196.eu-west-2.compute.amazonaws.com"
+}
